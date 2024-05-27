@@ -16,8 +16,7 @@ import com.example.aluvery.ui.theme.AluveryTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent()
-        {
+        setContent{
             MyfristComposalbe()
         }
     }
@@ -26,13 +25,21 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyfristComposalbe()
 {
-   Text(text = "Teste teste")
-}
+    Text(text = "Teste teste")
 
+}
 @Preview
 @Composable
 fun MyfristComposalbePreview()
 {
-    MyfristComposalbe()
+    Text(text = "teste teste")
 }
+
+@Preview
+@Composable
+fun MySecondtComposalbePreview()
+{
+    Text(text = "Novo App")
+}
+
 
