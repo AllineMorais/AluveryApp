@@ -25,13 +25,16 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.aluvery.model.Product
 import com.example.aluvery.ui.theme.Purple500
 import com.example.aluvery.ui.theme.Teal200
 
+
 @Composable
-fun ProductItem(product: com.example.aluvery.model.Product) {
+fun ProductItem(product: Product) {
     Surface(
         shape = RoundedCornerShape(15.dp)
        // elevation = 4.dp

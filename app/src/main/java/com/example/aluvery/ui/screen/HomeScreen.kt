@@ -20,9 +20,9 @@ import java.math.BigDecimal
 fun HomeScreen() {
     Column(
         Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+            .fillMaxSize() //Preenche todea a tela
+            .verticalScroll(rememberScrollState()), //Adiciona Scroll a coluna
+        verticalArrangement = Arrangement.spacedBy(16.dp)//Adiciona espaço entre os objetos, ideal deixar no nival pai para replicar a todos
     ) {
         Spacer(Modifier)
         ProductsSection("Promoções", sampleProducts)
